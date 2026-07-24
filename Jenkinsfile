@@ -1,2 +1,2 @@
 @Library('Jenkins-shared-library') _
-PythonBuild
+PythonBuild()
