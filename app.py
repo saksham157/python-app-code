@@ -52,7 +52,7 @@ def print_tasks():
 @app.route("/health")
 def health():
     """Used by Kubernetes liveness/readiness probes."""
-    return jsonify({"status": "ok"})
+    return jsonify({"status": "hello from jenkins shared pipeline"})
 
 
 @app.route("/tasks", methods=["GET"])
