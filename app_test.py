@@ -76,7 +76,7 @@ def test_health_endpoint():
     client = setup_client()
     response = client.get("/health")
     assert response.status_code == 200
-    assert response.get_json() == {"status": "ok"}
+    assert response.get_json() == {"status": "hello from jenkins pipeline"}
 
 
 def test_get_tasks_endpoint():
